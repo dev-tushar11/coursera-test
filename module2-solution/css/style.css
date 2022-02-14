@@ -1,0 +1,93 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Comic sans MS;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  background-color: lightgrey;
+  border: 2px solid black;
+  margin-right: 10px;
+  padding: 40px 10px 5px 10px;
+}
+
+.container {
+  position: relative;
+}
+
+#Chicken {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: lightpink;
+  width: 150px;
+}
+
+#Beef {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  width: 150px;
+}
+
+#Sushi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: lightyellow;
+  width: 150px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** for desktop view **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** for tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+/********** for mobile view **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
